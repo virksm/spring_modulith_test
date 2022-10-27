@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  project-postgres:
+    image: postgres
+    container_name: project-postgres
+    ports:
+      - "5439:5432"
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGIS_GDAL_ENABLED_DRIVERS: ENABLE_ALL
