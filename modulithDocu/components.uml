@@ -9,12 +9,12 @@ top to bottom direction
 
 Container_Boundary("Modulith.Application_boundary", "Application") {
   Component(Modulith.Application.satelliteimages, "satelliteimages", "Module", "", $tags="")
-  Component(Modulith.Application.mail, "mail", "Module", "", $tags="")
   Component(Modulith.Application.field, "field", "Module", "", $tags="")
+  Component(Modulith.Application.mail, "mail", "Module", "", $tags="")
 }
 
-Rel_D(Modulith.Application.mail, Modulith.Application.field, "listens to", $tags="")
 Rel_D(Modulith.Application.satelliteimages, Modulith.Application.field, "listens to", $tags="")
+Rel_D(Modulith.Application.mail, Modulith.Application.field, "listens to", $tags="")
 
 SHOW_LEGEND()
 @enduml
