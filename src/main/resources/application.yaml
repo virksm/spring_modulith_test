@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5439/postgres'
+    username: postgres
+    password: mysecretpassword
+    driverClassName: org.postgresql.Driver
+  flyway:
+    locations: [
+      'classpath:/db/migration'
+    ]
+    cleanDisabled: false
+
+logging:
+  pattern:
+    console: '%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %X{externalid}%white(%logger{36}.%M) - %msg %n'
+#

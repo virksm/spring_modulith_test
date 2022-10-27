@@ -1,0 +1,18 @@
+@startuml
+title satelliteimages
+
+top to bottom direction
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+Container_Boundary("Modulith.Application_boundary", "Application") {
+  Component(Modulith.Application.satelliteimages, "satelliteimages", "Module", "", $tags="")
+  Component(Modulith.Application.field, "field", "Module", "", $tags="")
+}
+
+Rel_D(Modulith.Application.satelliteimages, Modulith.Application.field, "listens to", $tags="")
+
+SHOW_LEGEND()
+@enduml

@@ -1,0 +1,15 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`com.example.spring_modulith_test.field`
+|Spring components
+|None
+|Aggregate roots
+|* `c.e.s.f.Field`
+|Published events
+|* `c.e.s.f.FieldCreatedEvent` created by:
+** `c.e.s.f.internal.FieldEventManager.fieldCreated(…)`
+
+|Properties
+|none
+|===

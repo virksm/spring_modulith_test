@@ -1,0 +1,13 @@
+[%autowidth.stretch, cols="h,a"]
+|===
+|Base package
+|`com.example.spring_modulith_test.mail`
+|Spring components
+|None
+|Published events
+|none
+|Events listened to
+|* `c.e.s.f.FieldCreatedEvent`
+|Properties
+|none
+|===
