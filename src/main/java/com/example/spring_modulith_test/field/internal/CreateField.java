@@ -16,8 +16,8 @@ public class CreateField {
     public Field handle(String name) {
         Field field = new Field();
         field.setName(name);
-        fieldRepository.save(field);
-        fieldEventManager.fieldCreated(field);
+        fieldRepository.save(field.createField());
+        // alternative fieldEventManager.fieldCreated(field);
         return field;
     }
 }
